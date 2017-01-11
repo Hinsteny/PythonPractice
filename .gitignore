@@ -1,0 +1,17 @@
+# Eclipse stuff, should be for each developer, so, ignore
+.classpath
+.project
+.settings
+# since we use Maven, ant buil.xml will be private for each developers
+#  (if they need their own scripts to do some stuff)
+build.xml
+# maven target (we definitely do not want this one in git)
+target/
+# prevent tmp/ should be for test file or dev db and stuff
+tmp/
+
+# intellij and sublime stuff
+*.iml
+.idea/
+*.sublime-project
+*.sublime-workspace
