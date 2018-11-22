@@ -63,7 +63,7 @@ def get_user_description(container):
         for item in container:
             text = item.text
             if len(text) > 0 and text.find("简介：") > -1:
-                description = text[2:len(text)]
+                description = text[4:len(text)]
                 break
     return description
 

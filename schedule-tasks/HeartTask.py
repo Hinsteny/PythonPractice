@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Copyright (c) Hinsteny 2018 ActiveState Software Inc.
+
+import schedule
+import time
+
+
+def job():
+    print("I'm working...")
+
+
+schedule.every(1).seconds.do(job)
+schedule.every().minutes.do(job)
+schedule.every().hour.do(job)
+schedule.every().day.at("10:30").do(job)
+schedule.every(5).to(10).days.do(job)
+schedule.every().monday.do(job)
+schedule.every().wednesday.at("13:15").do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
