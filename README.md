@@ -1,5 +1,5 @@
-# PythonCrawler
-python cramler practice project!
+# PythonPractice
+python practice project!
 
 ## Auther
 * Hinsteny [Home](https://github.com/Hinsteny)
