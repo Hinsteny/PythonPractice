@@ -15,3 +15,6 @@ tmp/
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# visual-studio code
+.vscode/
