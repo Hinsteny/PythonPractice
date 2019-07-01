@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (c) Hinsteny 2018 ActiveState Software Inc.
+# Copyright (c) Hinsteny 2019 ActiveState Software Inc.
 
 """题目--无重复字符的最长子串
 给定一个字符串, 请你找出其中不含有重复字符串的 最长子串 的长度
@@ -26,19 +26,22 @@
 """
 
 
-def getMaxSubstrLength(str):
-    max = 0
-    substr = ""
-    for i in range(0, len(str)):
-        index = substr.find(str[i])
-        if index > -1:
-            substr = substr[index + 1:]
-        substr += str[i]
-        max = (max if (max > len(substr)) else len(substr))
-    return max
+class Solution:
+    def lengthOfLongestSubstring(self, s: str):
+        max = 0
+        length = len(s)
+        substr = ""
+        for i in range(0, length):
+            index = substr.find(s[i])
+            if index > -1:
+                substr = substr[index + 1:]
+            substr += s[i]
+            max = (max if (max > len(substr)) else len(substr))
+        return max
 
 
 if __name__ == '__main__':
     while True:
         str = input('请输入给定一个字符串:')
-        print(getMaxSubstrLength(str))
+        solution = Solution()
+        print(solution.lengthOfLongestSubstring(str))

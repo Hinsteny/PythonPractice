@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (c) Hinsteny 2018 ActiveState Software Inc.
+# Copyright (c) Hinsteny 2019 ActiveState Software Inc.
 
 """题目--整数反转
 给出一个32位的有符号整数, 你需要将这个整数中每位上的数字进行反转
